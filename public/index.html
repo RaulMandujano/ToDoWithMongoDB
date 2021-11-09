@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>To-do List</title>
+
+		<link rel="stylesheet" href="main.css" />
+	</head>
+
+	<body>
+		<section class="todo-outer">
+			<div class="todo-inner">
+				<header>
+					<div class="row">
+						<nav class="navbar">
+							<a class="navbar-brand">Search Task</a>
+							<form>
+								<input
+									type="search"
+									placeholder="Search"
+									aria-label="Search"
+									id="searchtextbox"
+								/>
+							</form>
+						</nav>
+					</div>
+				</header>
+
+				<h1>Tasks</h1>
+
+				<div class="taskadded">
+					<input
+						type="text"
+						class="form-control"
+						placeholder="Enter your task"
+						id="addtaskinput"
+					/>
+					<select id="category" onChange="output()">
+						<option value="0">Select category</option>
+						<option value="Grocery">Grocery</option>
+						<option value="House">House</option>
+						<option value="Shool">School</option>
+					</select>
+
+					<input type="hidden" id="saveindex" />
+				</div>
+				<button
+					type="button"
+					class="btn btn-success mr-sm-2 buttonadd"
+					id="addtaskbtn"
+				>
+					Add Task
+				</button>
+				<button
+					type="button"
+					class="btn btn-success mr-sm-2"
+					id="savetaskbtn"
+					style="display: none"
+				>
+					Save Task
+				</button>
+				<button type="button" id="deleteallbtn" class="btn btn-danger">
+					Delete All
+				</button>
+
+				<button onclick="show_hide()">Show/Hide Complete</button>
+
+				<div>
+					<table
+						class="table table-striped mt-3 mb-0"
+						id="addedtasklist"
+					></table>
+				</div>
+			</div>
+		</section>
+		<script src="main.js"></script>
+	</body>
+</html>

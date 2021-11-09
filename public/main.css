@@ -1,0 +1,51 @@
+body {
+    padding-left: 33%;
+    width: 25rem;
+}
+
+header{
+
+}
+header input{
+    padding: 13px 25px;
+}
+
+
+section div input {
+    padding: 10px 30px;
+}
+section div select {
+    padding: 10px 5px;
+}
+
+h1 {
+    color: rgb(44, 46, 155);
+}
+
+
+body{font-family: 'Roboto-Regular';background: #f5f5f5;}
+header .navbar{padding: .5rem 0;}
+header nav.navbar .navbar-brand{color: rgb(70, 52, 175); font-size: 30px;}
+section.todo-outer {
+    width: 100%;
+    float: left;
+    padding: 30px 0;
+}
+section.todo-outer h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.todo-inner {
+    width: 100%;
+    float: left;
+    padding: 40px;
+    box-shadow: 0px 0px 10px #c1c1c1;
+    background: #fff;
+}
+table tr td button {
+    background: no-repeat;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.completed{text-decoration: line-through;}
